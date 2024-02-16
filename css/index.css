@@ -62,7 +62,7 @@ img {
 
 .col-a1 {
     padding: 15px;
-    width: 50%;
+    width: 100%;
     line-height: 30px;
 }
 
@@ -81,6 +81,12 @@ img {
     flex-direction: column;
     align-items: center;
     padding: 30px;
+}
+
+.free-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .size-img-testimonials {
@@ -116,9 +122,10 @@ img {
 
 }
 
-.m-0-auto{
+.m-0-auto {
     margin: 0 auto;
 }
+
 .m-30 {
     margin: 30px 0px;
 }
@@ -162,6 +169,20 @@ img {
 
 }
 
+.li-initial{
+    list-style: initial;
+}
+
+.td-underline{
+    text-decoration: underline;
+}
+
+.ta-center{
+    text-align: center;
+}
+.p-50{
+    padding: 50px;
+}
 .fs-50 {
     font-size: 50px;
 }
@@ -174,12 +195,13 @@ img {
     margin-top: 20px;
 }
 
-.p-relative{
+.p-relative {
     position: relative;
 }
-.quote-position{
+
+.quote-position {
     position: absolute;
-    right: 50%;
+    left: 180px;
 }
 
 /*FLEX CLASS*/
@@ -298,6 +320,17 @@ img {
     background-color: white;
 }
 
+.c-grey {
+    color: grey;
+}
+
+.c-gold {
+    color: gold;
+}
+
+.bg-black{
+    background-color: black;
+}
 /*BOTTONS*/
 
 .btn-white {
@@ -327,11 +360,18 @@ img {
     max-width: 180px;
 }
 
-.btn-linkedin{
+.btn-linkedin {
     color: white;
-    background-color:rgb(124, 11, 199) ;
+    background-color: rgb(124, 11, 199);
     padding: 10px;
     width: 180px;
+    border-radius: 20px;
+}
+
+.btn-started {
+    background-color: white;
+    color: rgb(124, 11, 199);
+    padding: 10px 50px;
     border-radius: 20px;
 }
 
@@ -355,7 +395,7 @@ img {
 
 
     .col-a1 {
-        width: 60%;
+        width: 50%;
     }
 
     .big-card {
@@ -366,7 +406,7 @@ img {
         width: calc((4 * 100% / 12) - 18px);
     }
 
-    .col-t-image{
+    .col-t-image {
         display: flex;
         flex-wrap: wrap;
     }
@@ -383,38 +423,38 @@ img {
         justify-content: center;
     }
 
-    .size-img-testimonials{
+    .size-img-testimonials {
         width: 500px;
     }
-    
-    .benefits-col{
+
+    .benefits-col {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .benefits-card{
+    .benefits-card {
         width: calc((6 *100% / 12) - 40px);
-        
+
     }
 
-    .text-col{
+    .text-col {
         display: flex;
-    flex-direction: column;
-    width: 60%;
+        flex-direction: column;
+        width: 60%;
     }
 
-    .linkedin-col{
+    .linkedin-col {
         display: flex;
         width: 40%;
         flex-wrap: wrap;
         padding: 30px
     }
 
-    .quote-position{
+    .quote-position {
         right: 10%;
     }
 
-   
+
 
 
 }
@@ -445,7 +485,7 @@ img {
         justify-content: flex-end;
     }
 
-    .col-t-image{
+    .col-t-image {
         display: flex;
     }
 
@@ -460,13 +500,17 @@ img {
         justify-content: center;
     }
 
-    .benefits-col{
+    .benefits-col {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .benefits-card{
+    .benefits-card {
         width: calc((4 *100% / 12) - 60px);
+    }
+
+    .quote-position{
+        left: 250px;
     }
 
 
