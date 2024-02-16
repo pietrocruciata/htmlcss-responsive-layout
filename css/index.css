@@ -47,7 +47,7 @@ img {
     padding: 30px 0px;
 }
 
-.pl-10{
+.pl-10 {
     padding-left: 10px;
 }
 
@@ -83,9 +83,9 @@ img {
     padding: 30px;
 }
 
-.size-img-testimonials{
+.size-img-testimonials {
     border-radius: 50%;
-    width: 100%;
+    width: 210px;
     aspect-ratio: 1/1;
 }
 
@@ -116,6 +116,9 @@ img {
 
 }
 
+.m-0-auto{
+    margin: 0 auto;
+}
 .m-30 {
     margin: 30px 0px;
 }
@@ -131,23 +134,52 @@ img {
     padding: 15px;
 
 }
-.intro-testimonials{
+
+.intro-testimonials {
     text-align: center;
 }
 
-.fs-xxlarge{
+.fs-xxlarge {
     font-size: xx-large;
 }
 
-.testimonials-text{
+.testimonials-text {
     padding-top: 10px;
     line-height: 2em;
     color: white;
 }
 
-.name-testimonials{
+.name-testimonials {
     padding: 20px 0px;
     text-align: center;
+}
+
+.intro-benefits {
+    padding: 20px 0px;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.p-relative{
+    position: relative;
+}
+.quote-position{
+    position: absolute;
+    right: 50%;
 }
 
 /*FLEX CLASS*/
@@ -162,6 +194,10 @@ img {
 
 .jc-space-between {
     justify-content: space-between;
+}
+
+.jc-center {
+    justify-content: center;
 }
 
 .gap-40 {
@@ -220,11 +256,20 @@ img {
     flex-wrap: wrap;
 }
 
-.testimonials-card{
+.testimonials-card {
     background-color: rgb(124, 11, 199);
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 /*COLOR AND BG COLOR*/
@@ -245,7 +290,7 @@ img {
     background-color: rgb(124, 11, 199);
 }
 
-.c-violet{
+.c-violet {
     color: rgb(124, 11, 199);
 }
 
@@ -262,6 +307,17 @@ img {
     color: black;
 }
 
+.btn-more {
+    background-color: rgb(124, 11, 199);
+    padding: 10px 25px;
+    color: white;
+    width: 70px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
 .btn-blue {
     background-color: rgb(0, 165, 231);
     padding: 5px 20px;
@@ -269,6 +325,14 @@ img {
     color: white;
     text-align: center;
     max-width: 180px;
+}
+
+.btn-linkedin{
+    color: white;
+    background-color:rgb(124, 11, 199) ;
+    padding: 10px;
+    width: 180px;
+    border-radius: 20px;
 }
 
 .list-header {
@@ -301,18 +365,56 @@ img {
     .small-card {
         width: calc((4 * 100% / 12) - 18px);
     }
-    
-    .testimonials-card{
+
+    .col-t-image{
         display: flex;
+        flex-wrap: wrap;
     }
 
-    .testimonials-text{
+    .testimonials-card {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .testimonials-text {
         display: flex;
         flex-direction: column;
         padding-left: 20px;
         justify-content: center;
     }
 
+    .size-img-testimonials{
+        width: 500px;
+    }
+    
+    .benefits-col{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefits-card{
+        width: calc((6 *100% / 12) - 40px);
+        
+    }
+
+    .text-col{
+        display: flex;
+    flex-direction: column;
+    width: 60%;
+    }
+
+    .linkedin-col{
+        display: flex;
+        width: 40%;
+        flex-wrap: wrap;
+        padding: 30px
+    }
+
+    .quote-position{
+        right: 10%;
+    }
+
+   
 
 
 }
@@ -343,14 +445,29 @@ img {
         justify-content: flex-end;
     }
 
-    .testimonials-card{
+    .col-t-image{
         display: flex;
     }
 
-    .testimonials-text{
+    .testimonials-card {
+        display: flex;
+    }
+
+    .testimonials-text {
         display: flex;
         flex-direction: column;
         padding-left: 20px;
         justify-content: center;
     }
+
+    .benefits-col{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .benefits-card{
+        width: calc((4 *100% / 12) - 60px);
+    }
+
+
 }
